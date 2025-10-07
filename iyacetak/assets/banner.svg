@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#e6fffa"/><stop offset="1" stop-color="#f0f9ff"/></linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="20" fill="url(#g)"/>
+  <g transform="translate(40,40)">
+    <rect width="420" height="240" rx="12" fill="#ffffff" stroke="#e6f6f3"/>
+    <rect x="460" y="20" width="260" height="160" rx="10" fill="#0ea5a2" opacity="0.12"/>
+    <text x="34" y="48" font-family="Inter, Arial" font-size="28" fill="#0f172a">Contoh Desain Spanduk</text>
+    <text x="34" y="88" font-family="Inter, Arial" font-size="14" fill="#475569">Mockup cepat untuk presentasi desain cetak</text>
+  </g>
+</svg>

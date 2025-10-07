@@ -1,0 +1,84 @@
+/* Minimalis modern - responsive - CSS murni */
+
+:root{
+  --bg1: #ffffff;
+  --bg2: #f7fafc;
+  --muted: #64748b;
+  --accent: #0ea5a2;
+  --dark: #0f172a;
+  --card: rgba(255,255,255,0.06);
+  --maxw: 1100px;
+  --radius: 12px;
+  --gap: 20px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  color: var(--dark);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:24px;}
+
+/* Header */
+.site-header{background:transparent;position:sticky;top:0;z-index:40;padding:14px 0;}
+.site-header .wrap{display:flex;align-items:center;gap:16px;justify-content:space-between;}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--dark);font-weight:700;}
+.logo{width:36px;height:36px;display:inline-block}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;padding:10px;border-radius:8px;transition:all .18s}
+.nav a.active, .nav a:hover{color:var(--dark);background:var(--card)}
+
+/* Buttons */
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--dark);color:#fff;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid rgba(0,0,0,0.08);color:var(--dark)}
+.btn.whatsapp{background:#25D366; color:white}
+
+/* Hero */
+.hero{padding:40px 0;background:linear-gradient(180deg,#fff 0%, #f1f5f9 100%);border-bottom:1px solid #eef2f7}
+.hero-inner{display:flex;gap:30px;align-items:center;justify-content:space-between}
+.hero-text{flex:1;min-width:260px}
+.hero h1{font-size:28px;margin:0 0 12px;color:var(--dark)}
+.hero p{color:var(--muted);margin-bottom:18px}
+.hero-media img{width:320px;max-width:40vw;border-radius:12px;box-shadow:0 8px 25px rgba(15,23,42,0.06)}
+
+/* Features */
+.features{padding:36px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+
+/* Content */
+.content-card{background:#fff;border-radius:12px;padding:32px;box-shadow:0 8px 30px rgba(15,23,42,0.05);margin:40px 0}
+
+/* Services cards */
+.service-card{background:#fff;border-radius:12px;padding:18px;border:1px solid #f1f5f9}
+
+/* Contact form */
+.contact-form{display:flex;flex-direction:column;gap:12px;max-width:680px}
+.contact-form input,.contact-form textarea{padding:12px;border:1px solid #e6edf3;border-radius:8px}
+.form-actions{display:flex;gap:12px;align-items:center}
+
+/* Footer */
+.site-footer{padding:28px 0;text-align:center;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-inner{flex-direction:column-reverse;text-align:center}
+  .hero-media img{max-width:80vw;width:100%}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .nav{display:none} /* simple mobile: hide nav to keep header compact */
+  .site-header .wrap{justify-content:space-between}
+}
+
+@media (max-width:520px){
+  .grid{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  .wrap{padding:16px}
+  .nav{display:none}
+}

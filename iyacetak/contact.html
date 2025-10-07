@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontak — IyaCetak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="IyaCetak logo" class="logo"> IyaCetak</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang</a>
+        <a href="services.html">Layanan</a>
+        <a href="contact.html" class="active">Kontak</a>
+      </nav>
+      <a class="btn whatsapp" href="https://wa.me/6281234567890" target="_blank">Chat WhatsApp</a>
+    </div>
+  </header>
+
+  <main class="wrap content-card">
+    <h1>Kontak Kami</h1>
+    <p>Isi formulir berikut untuk mengirim pesan. (Form menggunakan <code>mailto:</code> agar terbuka di email Anda.)</p>
+
+    <form action="mailto:info@iyacetak.id" method="post" enctype="text/plain" class="contact-form">
+      <label>Nama</label>
+      <input type="text" name="Nama" required>
+      <label>Email</label>
+      <input type="email" name="Email" required>
+      <label>Pesan</label>
+      <textarea name="Pesan" rows="6" required></textarea>
+      <div class="form-actions">
+        <button type="submit" class="btn">Kirim Email</button>
+        <a class="btn ghost" href="https://wa.me/6281234567890" target="_blank">Chat WhatsApp</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> IyaCetak — Percetakan</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

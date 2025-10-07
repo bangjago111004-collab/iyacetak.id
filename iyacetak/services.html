@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Layanan — IyaCetak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="IyaCetak logo" class="logo"> IyaCetak</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang</a>
+        <a href="services.html" class="active">Layanan</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+      <a class="btn whatsapp" href="https://wa.me/6281234567890" target="_blank">Chat WhatsApp</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Layanan Kami</h1>
+    <div class="grid">
+      <div class="service-card">
+        <h3>Kartu Nama</h3>
+        <p>Cetak kartu nama full color, berbagai kertas dan finishing.</p>
+      </div>
+      <div class="service-card">
+        <h3>Brosur & Flyer</h3>
+        <p>Desain dan cetak brosur dua sisi, lipat, dan potong sesuai kebutuhan.</p>
+      </div>
+      <div class="service-card">
+        <h3>Spanduk & X-Banner</h3>
+        <p>Bahan awet, cetak UV/resist, cocok untuk outdoor dan event.</p>
+      </div>
+      <div class="service-card">
+        <h3>Stiker & Label</h3>
+        <p>Stiker vinyl tahan air untuk produk dan promosi.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> IyaCetak — Percetakan</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
